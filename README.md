@@ -10,11 +10,13 @@ Game has options in which you can choose:
 - If you want to play with friend or with AI
 - who will start - PLAYER ONE IS "O", AI is "X"
 - Level of AI
+You can share that you're playing this game by clicking share icon in game menu
+During a game, you can chceck your actual stats in battle with AI by clicking on "Stats" button
 All Stats are saved to AppProperties.
 
-
-
-
+|
+|
+|
 Some Screenshoots from Android version:
 ![alt text](https://github.com/JustMyst/tictactoe/blob/master/Screenshoots/Screenshot_2018-07-04-10-36-05.png?raw=true)
 ![alt text](https://github.com/JustMyst/tictactoe/blob/master/Screenshoots/Screenshot_2018-07-04-10-36-17.png?raw=true)
