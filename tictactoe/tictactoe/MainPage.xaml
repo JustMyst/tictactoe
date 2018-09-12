@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:tictactoe"
+             x:Class="tictactoe.MainPage">
+    <ContentPage.Content>
+        <StackLayout Padding="50" BackgroundColor="#d8dfe5">
+            <Label Text="Welcome to Tiktaktoł!" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"
+                   Margin="0,0,0,100"
+                   />
+            <Button Text="New Game"  
+                    HeightRequest="100"
+                    
+                    BackgroundColor="AliceBlue"
+                    Clicked="btnNewGameClicked"/>
+            <Button Text="Options"  
+                    HeightRequest="100"
+                    BackgroundColor="AliceBlue"
+                    Clicked="btnOptionsClicked"/>
+            <Button HeightRequest="50"
+                    WidthRequest="50"
+                    BackgroundColor="AliceBlue"
+                    Clicked="btnShareClicked"
+                    HorizontalOptions="End"
+                    Image="Share.png"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

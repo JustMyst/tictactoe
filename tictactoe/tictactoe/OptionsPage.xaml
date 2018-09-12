@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tictactoe.OptionsPage">
+    <ContentPage.Content>
+        <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Padding="50" BackgroundColor="#d8dfe5" >
+            <Label Text="Single Player Mode ON" 
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="Large"
+                       x:Name="lblSingle"/>
+            <Switch x:Name="playerSwitch"
+                        Toggled="Handle_Toggled" 
+                        HorizontalOptions="CenterAndExpand"  />
+            <Label Text="Chose your Level" 
+                   Margin="0,40,0,0"
+                       HorizontalOptions="Center" 
+                       FontSize="Large"
+                       />
+
+            <Slider x:Name="sldr"
+                    Maximum="2"
+                    ValueChanged="OnSliderValueChanged"
+                    />
+            <Label x:Name="displayLabel"
+                       FontSize="Medium"
+                       Text=""
+                       HorizontalOptions="Center"
+                       />
+            <Label x:Name="lblWhoFirst"
+                   FontSize="Large"
+                   Text="Who goes first?"
+                   HorizontalOptions="Center"
+                   Margin="0,40,0,0"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button Text="X"
+                            FontSize="Large"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            BackgroundColor="AliceBlue"
+                            Clicked="btnXClicked"
+                            x:Name="btnX"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button Text="X/O"
+                            FontSize="Large"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            BackgroundColor="AliceBlue"
+                            Clicked="btnXOClicked"
+                            x:Name="btnXO"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button Text="O"
+                            FontSize="Large"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            BackgroundColor="AliceBlue"
+                            Clicked="btnOClicked"
+                            x:Name="btnO"/>
+                </Grid>
+            </Grid>
+            <Button Text="Save" 
+                    HorizontalOptions="Center" 
+                    WidthRequest="100" 
+                    Clicked="SaveClicked" 
+                    BackgroundColor="AliceBlue"
+                    Margin="0,40,0,0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
