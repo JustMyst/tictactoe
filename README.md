@@ -1,6 +1,8 @@
 # tictactoe
 TicTacToe game in Xamarin with Single' and Multi-player, Options, AI levels and stats.
 
+You can now INSTALL this game on ANDROID - just enter Android APK, download and run on your phone.
+
 It's actually TikTakToł - that's how I'd write pronunciation in Polish language.. As I'm Polish.
 
 Game has not been tested on iOS since i don't have acces to it.
